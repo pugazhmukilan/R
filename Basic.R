@@ -35,3 +35,16 @@ print(c(3,4,5,6)^c(2,3))#will get warning
 print(c(3,4,5,6)^c(2,3,4))#will get warning
 print(c(3,4,5,6)^c(2,3,5,6))#wont get warning
 
+
+#sqrt  fucntions
+print(sqrt(c(3,4,5,6,7)))
+print(sqrt(5))
+
+
+#finding the sum
+v1 <- c(2,3,5,6,7,8,9)
+print(paste("the sum of the numbers is:",sum(v1)))
+
+#finding the summation of x squar3
+square<-c(3,4,5,6)^c(2)
+print(paste("sum of the suare of the numeber is :",sum(square)))
