@@ -61,4 +61,18 @@ b <- matrix(nrow=3,ncol=2,data=c(3,7,2,5,9,1))
 
 print(paste("=========MULTI OF TWO A AND B MATRIX============="))
 
-print(a%*%b)
+#print(a%*%b)
+
+#primary data which we collected in the first place whereas secondary data is the data which are collected by someone 
+
+x <- matrix(nrow=5,ncol=2,data=c(1,0,1,0,0,1,1,0,1,1))
+print(x)
+#printing the frequency iof the elements
+print(table (x))
+
+#relative frequencies of  the elements in the matrix
+per = table(x)/length(x)
+print(per)
+
+ x<- min(1,2,3)
+print(x)
