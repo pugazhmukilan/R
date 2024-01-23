@@ -74,5 +74,30 @@ print(table (x))
 per = table(x)/length(x)
 print(per)
 
- x<- min(1,2,3)
-print(x)
+ 
+
+ #frequency distribution
+ time <- c(32,45,76,98,43,54,65,43,21,09,90,97,94,92)
+ print(paste("=====the length of the time is ========"))
+ print(paste(length(time)))
+ print(min(time))## minimum value of x
+ print(max(time))## maximum value of x
+ print("===========range fo the arrray==============")
+ print(range(time))
+
+ ##c() is used to contcantinate  the argument  in R programming
+
+
+
+ breaks = seq(20,100,by=10)
+
+ print(paste("the breask from 30 to 90 with 10 units break ",breaks))
+
+
+ time.cut = cut(time,breaks,right = TRUE)
+print(time.cut)
+
+print(table(time.cut))
+
+
+print(cbind(table(time.cut)))
