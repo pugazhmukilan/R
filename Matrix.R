@@ -94,10 +94,17 @@ print(per)
  print(paste("the breask from 30 to 90 with 10 units break ",breaks))
 
 
- time.cut = cut(time,breaks,right = TRUE)
-print(time.cut)
+ timecut = cut(time,breaks,right = TRUE)
+ print("printintg the time cut")
+print(timecut)
 
-print(table(time.cut))
+print(table(timecut))
+
+##for combining the datas in the table form
+print(cbind(table(timecut)))
 
 
-print(cbind(table(time.cut)))
+#used to find the cumulative frequencies
+print(cbind(cumsum(table(timecut))))
+
+
