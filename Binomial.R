@@ -33,3 +33,7 @@ print(paste("the answer is ",anotherans))
 
 checking<-sum(ans,anotherans)
 print(paste("checking the answer ",checking))
+
+
+x <- sum(dbinom(c(8,9,10,11,12),25,0.4))
+print(x)

@@ -37,9 +37,46 @@ plot(x, y, type = 'l')
 
 a=1-pnorm(68,60,4)
 print(paste("asnwer is ",a))
+
+
+
 x_polygon = seq(, 68, length = 100)
 y_polygon = dnorm(x_polygon, mean = 60, sd = 4)
 polygon(c(-80, x_polygon, 68), c(0, y_polygon, 0), col = 'skyblue')
 
 b=pnorm(55,60,4)
 print(paste("answer is ",b))
+
+
+#q2
+ans = pnorm(90,20,10)
+print(paste("answer 2 is ",ans))
+
+#q3
+ans = dnorm(95,100,15)
+print(paste("answer 3 is ",ans))
+
+#q4
+x = seq(0, 300, length = 100)
+y = dnorm(x, mean = 170, sd = 30)
+plot(x, y, type = 'l')
+
+#q4a
+ans = dnorm(230,170,30)
+print(paste("asnwer 4 a is ",ans))
+
+#q4b
+n=seq(8,300,length=292)
+ans8 <- dbinom(8,292,ans)
+print(paste("the probabality that at least 8 boys have serum cholesterol level that exceeds 230 is ",ans8))
+
+
+
+#q5
+x = seq(30, 70, length = 100)
+y = dnorm(x, mean = 50, sd = 2)
+plot(x, y, type = 'l')
+
+ans = pnorm(52,50,2)-pnorm(42,50,2)
+print(paste("asnwer s is ",ans))
+
